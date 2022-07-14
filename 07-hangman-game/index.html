@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Hangman</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<h1>Hangman</h1>
+		<p>Find the hidden word - Enter a letter</p>
+		<div class="game-container">
+			<svg height="250" width="200" class="figure-container">
+				<!-- ROD -->
+				<line x1="60" y1="20" x2="140" y2="20"/>
+				<line x1="140" y1="20" x2="140" y2="50"/>
+				<line x1="60" y1="20" x2="60" y2="230"/>
+				<line x1="20" y1="230" x2="100" y2="230"/>
+
+				<!-- HEAD -->
+				<circle class="figure-part" cx="140" cy="70" r="20"/>
+
+				<!-- BODY -->
+				<line class="figure-part" x1="140" y1="90" x2="140" y2="150"/>
+
+				<!-- ARMS -->
+				<line class="figure-part" x1="140" y1="100" x2="120" y2="120"/>
+				<line class="figure-part" x1="140" y1="100" x2="160" y2="120"/>
+
+				<!-- LEGS -->
+				<line class="figure-part" x1="140" y1="150" x2="120" y2="180"/>
+				<line class="figure-part" x1="140" y1="150" x2="160" y2="180"/>
+			</svg>
+
+			<div class="wrong-letter-container">
+				<div id="wrong-letters">7	
+					
+				</div>
+			</div>
+
+			<div class="word" id="word">
+			
+			</div>
+		</div>
+
+		<!-- POPUP for final message -->
+
+		<div class="popup-container" id="popup-contaner">
+			<div class="popup">
+				<h2 id="final-message"></h2>
+				<button id="play-btn">Play again</button>
+			</div>
+		</div>
+
+		<!-- Notification -->
+
+		<div class="notification-container" id="notification-container">
+			<p>You have already enter this letter</p>
+		</div>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
