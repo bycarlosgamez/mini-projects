@@ -64,6 +64,7 @@ body {
 .filter {
   width: 100%;
   paddding: 12px;
+  font-size: 16px;
 }
 
 /******************************************
